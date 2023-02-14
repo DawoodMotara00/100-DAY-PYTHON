@@ -46,6 +46,7 @@ print(password)
 
 # #Eazy Level - Order not randomised:
 # e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+
 # random_letters = []
 # for i in range(0, nr_letters):
 #     a = random.randrange(len(letters))
