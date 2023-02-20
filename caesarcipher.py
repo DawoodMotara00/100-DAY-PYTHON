@@ -16,20 +16,14 @@ def caesar():
             text = input("Type your message:\n").lower()
             shift = int(input("Type the shift number:\n"))
 
-            if direction == "encode":
-                x = []
-                for letter in text:
-                    a = alphabet.index(letter)
-                    x.append(alphabet[a + shift])
-                encrypted = "".join(x)
-                print(encrypted)
             if direction == "decode":
-                x = []
-                for letter in text:
-                    a = alphabet.index(letter)
-                    x.append(alphabet[a - shift])
-                decrypted = "".join(x)
-                print(decrypted)
+                shift *= -1
+            x = []
+            for letter in text:
+                a = alphabet.index(letter)
+                x.append(alphabet[a + shift])
+            outcome = "".join(x)
+            print(outcome)
         else:
             continue
 
